@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddCustomerController">
+   <children>
+      <AnchorPane prefHeight="459.0" prefWidth="625.0" style="-fx-background-color: #cfe7da;">
+         <children>
+            <AnchorPane prefHeight="70.0" prefWidth="629.0" style="-fx-background-color: #083D41;">
+               <children>
+                  <Label layoutX="220.0" layoutY="21.0" prefHeight="34.0" prefWidth="314.0" text="Add Customer Form" textFill="#f7f5f5">
+                     <font>
+                        <Font name="Tahoma" size="27.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <JFXTextField fx:id="txtid" layoutX="182.0" layoutY="78.0" prefHeight="26.0" prefWidth="223.0" promptText="ID" />
+            <JFXTextField fx:id="txtname" layoutX="182.0" layoutY="173.0" prefHeight="26.0" prefWidth="223.0" promptText="NAME" />
+            <JFXTextField fx:id="txtaddress" layoutX="182.0" layoutY="222.0" prefHeight="26.0" prefWidth="223.0" promptText="ADDRESS" />
+            <JFXTextField fx:id="txtcontact" layoutX="182.0" layoutY="267.0" prefHeight="26.0" prefWidth="223.0" promptText="CONTACT" />
+            <JFXComboBox fx:id="cmbtittle" layoutX="182.0" layoutY="126.0" prefHeight="26.0" prefWidth="223.0" promptText="TITTLE" />
+            <DatePicker fx:id="dateob" layoutX="175.0" layoutY="314.0" prefHeight="26.0" prefWidth="236.0" promptText="DOB" style="-fx-background-color: black;" />
+            <JFXButton layoutX="161.0" layoutY="359.0" onAction="#btnClearOnAction" prefHeight="26.0" prefWidth="114.0" style="-fx-background-color: rgba(253, 203, 110,1.0);" text="Clear" textFill="#f4f0f0">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="321.0" layoutY="359.0" onAction="#btnAddOnAction" prefHeight="26.0" prefWidth="114.0" style="-fx-background-color: rgba(9, 132, 227,1.0);" text="Add" textFill="#f4f0f0">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <Label fx:id="lblbox" layoutX="2.0" layoutY="420.0" prefHeight="26.0" prefWidth="626.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
